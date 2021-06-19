@@ -33,9 +33,9 @@ function r2d2Speaks(code) {
   if (!code.length) return;
   const firstInLine = code[0];
   if (firstInLine === 0) {
-      console.log("beep");
+      console.log("beep"); // print out "beep" first
       return setTimeout(() => {
-          r2d2Speaks(code.slice(1));
+          r2d2Speaks(code.slice(1)); // delaying the action of slicing code array by 400ms
       }, 400)
   } else {
       console.log("boop");
